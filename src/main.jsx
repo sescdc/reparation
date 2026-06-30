@@ -14,6 +14,8 @@ import {
 import data from "./data/reports.json";
 import "./styles.css";
 
+const projectUrl = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+
 const formatCurrency = (value) =>
   new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -33,7 +35,7 @@ function Header() {
         <a href="#cities">Cities</a>
         <a href="#method">Method</a>
       </nav>
-      <a className="header-action" href={data.nationalReportPath} target="_blank" rel="noreferrer">
+      <a className="header-action" href={projectUrl(data.nationalReportPath)} target="_blank" rel="noreferrer">
         <FileText size={17} />
         National PDF
       </a>
@@ -55,7 +57,7 @@ function Hero() {
             <BookOpen size={19} />
             Read the Reports
           </a>
-          <a className="secondary-button" href={data.nationalReportPath} target="_blank" rel="noreferrer">
+          <a className="secondary-button" href={projectUrl(data.nationalReportPath)} target="_blank" rel="noreferrer">
             <Download size={18} />
             Download PDF
           </a>
@@ -64,7 +66,7 @@ function Hero() {
       <div className="hero-panel" aria-label="Archive summary">
         <img
           className="hero-archive-image"
-          src="/assets/reparations-archive-hero.png"
+          src={projectUrl("/assets/reparations-archive-hero.png")}
           alt="Archival reparations research documents and city dossiers"
         />
         <div className="panel-topline">
@@ -205,11 +207,11 @@ function CityArchive() {
               <span>{city.sourcePageNote}</span>
             </div>
             <div className="city-actions">
-              <a href={city.pdfPath} target="_blank" rel="noreferrer">
+              <a href={projectUrl(city.pdfPath)} target="_blank" rel="noreferrer">
                 <FileText size={17} />
                 View
               </a>
-              <a href={city.pdfPath} download>
+              <a href={projectUrl(city.pdfPath)} download>
                 <Download size={17} />
                 Download PDF
               </a>
@@ -236,7 +238,7 @@ function App() {
             The public archive is built to make the claim auditable: national summary first, city
             evidence always one click away.
           </p>
-          <a className="primary-button" href={data.nationalReportPath} target="_blank" rel="noreferrer">
+          <a className="primary-button" href={projectUrl(data.nationalReportPath)} target="_blank" rel="noreferrer">
             <ArrowUpRight size={19} />
             Open National Dossier
           </a>
