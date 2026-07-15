@@ -1,12 +1,12 @@
 {
   "agency": "NEGRO RESEARCH INSTITUTE",
-  "reportDate": "2026-06-29",
+  "reportDate": "2026-07-15",
   "sourceFolder": "C:\\Users\\jerry\\Desktop\\reparations",
-  "cityCount": 36,
-  "aggregateTotal": 5641599999998,
-  "aggregateTotalLabel": "$5.64T",
+  "cityCount": 43,
+  "aggregateTotal": 6435699999998,
+  "aggregateTotalLabel": "$6.44T",
   "nationalReportPath": "/reports/negro-research-institute-united-states-reparations-breakdown.pdf",
-  "methodologyNote": "The national figure is a sum of headline liability estimates across the 36 local and regional PDFs in the source folder. It is not presented as a complete national United States reparations estimate.",
+  "methodologyNote": "The national figure is a sum of headline liability estimates across the 43 local and regional PDFs in the source folder. It is not presented as a complete national United States reparations estimate.",
   "categories": [
     "Housing wealth destruction",
     "Business destruction",
@@ -96,6 +96,19 @@
       "sourcePageNote": "headline estimate extracted from closing liability pages"
     },
     {
+      "name": "Charlotte",
+      "state": "North Carolina",
+      "jurisdiction": "Charlotte, North Carolina",
+      "slug": "charlotte",
+      "fileName": "charlotte.pdf",
+      "sourceFile": "The-Case-for-Reparations-African-Americans-in-Charlotte-North-Carolina.pdf",
+      "pdfPath": "/reports/charlotte.pdf",
+      "total": 130500000000,
+      "totalLabel": "$130.5B",
+      "pageCount": 57,
+      "sourcePageNote": "headline estimate extracted from closing liability pages"
+    },
+    {
       "name": "Chicago",
       "state": "Illinois",
       "jurisdiction": "Chicago",
@@ -135,6 +148,19 @@
       "sourcePageNote": "headline estimate extracted from closing liability pages"
     },
     {
+      "name": "Columbia",
+      "state": "South Carolina",
+      "jurisdiction": "Columbia, South Carolina",
+      "slug": "columbia",
+      "fileName": "columbia.pdf",
+      "sourceFile": "The-Case-for-Reparations-African-Americans-in-Columbia-South-Carolina.pdf",
+      "pdfPath": "/reports/columbia.pdf",
+      "total": 55100000000,
+      "totalLabel": "$55.1B",
+      "pageCount": 54,
+      "sourcePageNote": "headline estimate extracted from closing liability pages"
+    },
+    {
       "name": "Denver",
       "state": "Colorado",
       "jurisdiction": "Denver, Colorado",
@@ -171,6 +197,19 @@
       "total": 82000000000,
       "totalLabel": "$82.0B",
       "pageCount": 60,
+      "sourcePageNote": "headline estimate extracted from closing liability pages"
+    },
+    {
+      "name": "Jacksonville",
+      "state": "Florida",
+      "jurisdiction": "Jacksonville, Florida",
+      "slug": "jacksonville",
+      "fileName": "jacksonville.pdf",
+      "sourceFile": "The-Case-for-Reparations-African-Americans-in-Jacksonville-Florida.pdf",
+      "pdfPath": "/reports/jacksonville.pdf",
+      "total": 138400000000,
+      "totalLabel": "$138.4B",
+      "pageCount": 59,
       "sourcePageNote": "headline estimate extracted from closing liability pages"
     },
     {
@@ -291,6 +330,19 @@
       "sourcePageNote": "headline estimate extracted from closing liability pages"
     },
     {
+      "name": "Oakland / Alameda County",
+      "state": "California",
+      "jurisdiction": "Oakland, California and Alameda County",
+      "slug": "oakland-alameda-county",
+      "fileName": "oakland-alameda-county.pdf",
+      "sourceFile": "The-Case-for-Reparations-African-Americans-in-Oakland-California-and-Alameda-County.pdf",
+      "pdfPath": "/reports/oakland-alameda-county.pdf",
+      "total": 98500000000,
+      "totalLabel": "$98.5B",
+      "pageCount": 60,
+      "sourcePageNote": "headline estimate extracted from closing liability pages"
+    },
+    {
       "name": "Oklahoma City",
       "state": "Oklahoma",
       "jurisdiction": "Oklahoma City",
@@ -382,6 +434,19 @@
       "sourcePageNote": "headline estimate extracted from closing liability pages"
     },
     {
+      "name": "Richmond",
+      "state": "Virginia",
+      "jurisdiction": "Richmond, Virginia",
+      "slug": "richmond",
+      "fileName": "richmond.pdf",
+      "sourceFile": "The-Case-for-Reparations-African-Americans-in-Richmond-Virginia.pdf",
+      "pdfPath": "/reports/richmond.pdf",
+      "total": 140300000000,
+      "totalLabel": "$140.3B",
+      "pageCount": 60,
+      "sourcePageNote": "headline estimate extracted from closing liability pages"
+    },
+    {
       "name": "Sacramento",
       "state": "California",
       "jurisdiction": "Sacramento, California",
@@ -444,6 +509,32 @@
       "total": 113500000000,
       "totalLabel": "$113.5B",
       "pageCount": 57,
+      "sourcePageNote": "headline estimate extracted from closing liability pages"
+    },
+    {
+      "name": "Tampa",
+      "state": "Florida",
+      "jurisdiction": "Tampa, Florida",
+      "slug": "tampa",
+      "fileName": "tampa.pdf",
+      "sourceFile": "The-Case-for-Reparations-African-Americans-in-Tampa-Florida.pdf",
+      "pdfPath": "/reports/tampa.pdf",
+      "total": 98400000000,
+      "totalLabel": "$98.4B",
+      "pageCount": 60,
+      "sourcePageNote": "headline estimate extracted from closing liability pages"
+    },
+    {
+      "name": "Tulsa",
+      "state": "Oklahoma",
+      "jurisdiction": "Tulsa, Oklahoma",
+      "slug": "tulsa",
+      "fileName": "tulsa.pdf",
+      "sourceFile": "The-Case-for-Reparations-African-Americans-in-Tulsa-Oklahoma.pdf",
+      "pdfPath": "/reports/tulsa.pdf",
+      "total": 132900000000,
+      "totalLabel": "$132.9B",
+      "pageCount": 59,
       "sourcePageNote": "headline estimate extracted from closing liability pages"
     },
     {

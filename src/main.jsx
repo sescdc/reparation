@@ -101,7 +101,7 @@ function NationalBreakdown() {
       <div className="section-heading">
         <h2>National Breakdown</h2>
         <p>
-          A disciplined aggregate view of the 36 local and regional briefs, with the original
+          A disciplined aggregate view of the {data.cityCount} local and regional briefs, with the original
           source PDFs preserved for city-level inspection.
         </p>
       </div>

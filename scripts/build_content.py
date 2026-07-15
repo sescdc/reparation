@@ -35,12 +35,15 @@ PDFS = [
     ("Birmingham", "Alabama", "Birmingham, Alabama", "The-Case-for-Reparations-African-Americans-in-Birmingham-Alabama.pdf", 137_200_000_000),
     ("Boston", "Massachusetts", "Boston", "The-Case-for-Reparations-African-Americans-in-Boston.pdf", 125_100_000_000),
     ("Buffalo", "New York", "Buffalo, New York", "The-Case-for-Reparations-African-Americans-in-Buffalo-New-York.pdf", 81_600_000_000),
+    ("Charlotte", "North Carolina", "Charlotte, North Carolina", "The-Case-for-Reparations-African-Americans-in-Charlotte-North-Carolina.pdf", 130_500_000_000),
     ("Chicago", "Illinois", "Chicago", "The-Case-for-Reparations-African-Americans-in-Chicago.pdf", 253_800_000_000),
     ("Cincinnati", "Ohio", "Cincinnati", "The-Case-for-Reparations-African-Americans-in-Cincinnati.pdf", 82_900_000_000),
     ("Cleveland", "Ohio", "Cleveland, Ohio", "The-Case-for-Reparations-African-Americans-in-Cleveland-Ohio.pdf", 103_600_000_000),
+    ("Columbia", "South Carolina", "Columbia, South Carolina", "The-Case-for-Reparations-African-Americans-in-Columbia-South-Carolina.pdf", 55_100_000_000),
     ("Denver", "Colorado", "Denver, Colorado", "The-Case-for-Reparations-African-Americans-in-Denver-Colorado.pdf", 89_100_000_000),
     ("East Palo Alto / San Mateo County", "California", "East Palo Alto and San Mateo County", "The-Case-for-Reparations-African-Americans-in-East-Palo-Alto-and-San-Mateo-County.pdf", 129_500_000_000),
     ("Flint / Genesee County", "Michigan", "Flint, Michigan and Genesee County", "The-Case-for-Reparations-African-Americans-in-Flint-Michigan-and-Genesee-County (1).pdf", 82_000_000_000),
+    ("Jacksonville", "Florida", "Jacksonville, Florida", "The-Case-for-Reparations-African-Americans-in-Jacksonville-Florida.pdf", 138_400_000_000),
     ("Jackson", "Mississippi", "Jackson, Mississippi", "The-Case-for-Reparations-African-Americans-in-Jackson-Mississippi.pdf", 78_400_000_000),
     ("Kansas City", "Missouri", "Kansas City, Missouri", "The-Case-for-Reparations-African-Americans-in-Kansas-City-Missouri.pdf", 86_700_000_000),
     ("Las Vegas", "Nevada", "Las Vegas, Nevada", "The-Case-for-Reparations-African-Americans-in-Las-Vegas-Nevada.pdf", 101_200_000_000),
@@ -50,6 +53,7 @@ PDFS = [
     ("Nashville", "Tennessee", "Nashville, Tennessee", "The-Case-for-Reparations-African-Americans-in-Nashville-Tennessee.pdf", 91_500_000_000),
     ("New Orleans", "Louisiana", "New Orleans", "The-Case-for-Reparations-African-Americans-in-New-Orleans.pdf", 119_800_000_000),
     ("New York City", "New York", "New York City", "The-Case-for-Reparations-African-Americans-in-New-York-City.pdf", 608_800_000_000),
+    ("Oakland / Alameda County", "California", "Oakland, California and Alameda County", "The-Case-for-Reparations-African-Americans-in-Oakland-California-and-Alameda-County.pdf", 98_500_000_000),
     ("Oklahoma City", "Oklahoma", "Oklahoma City", "The-Case-for-Reparations-African-Americans-in-Oklahoma-City.pdf", 74_600_000_000),
     ("Philadelphia", "Pennsylvania", "Philadelphia", "The-Case-for-Reparations-African-Americans-in-Philadelphia.pdf", 170_900_000_000),
     ("Phoenix", "Arizona", "Phoenix, Arizona", "The-Case-for-Reparations-African-Americans-in-Phoenix-Arizona.pdf", 92_400_000_000),
@@ -57,11 +61,14 @@ PDFS = [
     ("Portland", "Oregon", "Portland", "The-Case-for-Reparations-African-Americans-in-Portland.pdf", 92_800_000_000),
     ("Providence", "Rhode Island", "Providence, Rhode Island", "The-Case-for-Reparations-African-Americans-in-Providence-Rhode-Island.pdf", 72_100_000_000),
     ("Richmond / Contra Costa County", "California", "Richmond and Contra Costa County", "The-Case-for-Reparations-African-Americans-in-Richmond-and-Contra-Costa-County.pdf", 153_200_000_000),
+    ("Richmond", "Virginia", "Richmond, Virginia", "The-Case-for-Reparations-African-Americans-in-Richmond-Virginia.pdf", 140_300_000_000),
     ("Sacramento", "California", "Sacramento, California", "The-Case-for-Reparations-African-Americans-in-Sacramento-California (1).pdf", 114_700_000_000),
     ("San Francisco", "California", "San Francisco", "The-Case-for-Reparations-African-Americans-in-San-Francisco.pdf", 253_800_000_000),
     ("San Jose / Santa Clara County", "California", "San Jose and Santa Clara County", "The-Case-for-Reparations-African-Americans-in-San-Jose-and-Santa-Clara-County.pdf", 176_400_000_000),
     ("Seattle", "Washington", "Seattle", "The-Case-for-Reparations-African-Americans-in-Seattle.pdf", 109_600_000_000),
     ("St. Louis", "Missouri", "St. Louis", "The-Case-for-Reparations-African-Americans-in-St-Louis.pdf", 104_300_000_000),
+    ("Tampa", "Florida", "Tampa, Florida", "The-Case-for-Reparations-African-Americans-in-Tampa-Florida.pdf", 98_400_000_000),
+    ("Tulsa", "Oklahoma", "Tulsa, Oklahoma", "The-Case-for-Reparations-African-Americans-in-Tulsa-Oklahoma.pdf", 132_900_000_000),
     ("Virginia Beach / Norfolk / Newport News", "Virginia", "Virginia Beach, Norfolk, Newport News", "The-Case-for-Reparations-African-Americans-in-Virginia-Beach-Norfolk-Newport-News.pdf", 130_600_000_000),
     ("Washington, DC", "District of Columbia", "Washington DC", "The-Case-for-Reparations-African-Americans-in-Washington-DC.pdf", 268_500_000_000),
     ("Wichita", "Kansas", "Wichita, Kansas", "The-Case-for-Reparations-African-Americans-in-Wichita-Kansas.pdf", 60_900_000_000),
@@ -165,7 +172,7 @@ def build_city_data():
         "aggregateTotalLabel": dollars(aggregate_total),
         "nationalReportPath": f"/reports/{NATIONAL_REPORT_NAME}",
         "methodologyNote": (
-            "The national figure is a sum of headline liability estimates across the 36 local "
+            f"The national figure is a sum of headline liability estimates across the {len(cities)} local "
             "and regional PDFs in the source folder. It is not presented as a complete national "
             "United States reparations estimate."
         ),
@@ -289,7 +296,7 @@ def make_national_pdf(data):
         Paragraph(data["agency"], styles["Agency"]),
         Paragraph("United States Reparations Breakdown", styles["ReportTitle"]),
         Paragraph(
-            "A national-facing summary of 36 city and regional reparations briefs for Black people in the United States.",
+            f"A national-facing summary of {data['cityCount']} city and regional reparations briefs for Black people in the United States.",
             styles["Body"],
         ),
         Paragraph(
@@ -306,7 +313,7 @@ def make_national_pdf(data):
             [
                 Paragraph(data["aggregateTotalLabel"], styles["Metric"]),
                 Paragraph(str(data["cityCount"]), styles["Metric"]),
-                Paragraph("7", styles["Metric"]),
+                Paragraph(str(len(data["categories"])), styles["Metric"]),
             ],
             [
                 Paragraph("summed local liability estimates", styles["MetricLabel"]),
@@ -383,7 +390,7 @@ def make_national_pdf(data):
         ),
         Paragraph("Recommended Public Language", styles["Section"]),
         Paragraph(
-            f"These 36 local and regional reports collectively claim approximately {data['aggregateTotalLabel']} in present-value reparations liability for the jurisdictions covered.",
+            f"These {data['cityCount']} local and regional reports collectively claim approximately {data['aggregateTotalLabel']} in present-value reparations liability for the jurisdictions covered.",
             styles["Body"],
         ),
     ]
